@@ -1,0 +1,26 @@
+telegram_web_url: "https://web.telegram.org/a/"
+recipient_username: "@RETRO_mannnn"
+
+headless: false
+screenshot_every_step: true
+timeout_sec: 25
+
+paths:
+  state_file: "data/web_state.json"
+  db_file: "data/gifts.db"
+  logs_dir: "logs"
+  screenshots_dir: "screenshots"
+
+scan:
+  min_card_w: 120
+  min_card_h: 120
+  edge_band_px: 14
+  edge_density_threshold: 0.08
+
+auto_buy: true
+buy:
+  max_price_stars: 60000
+  daily_cap_stars: 1500000
+  wait_success_ms: 6000
+  success_text: ["Подарок отправлен", "Gift sent"]
+  insufficient_text: ["Недостаточно", "Insufficient", "Not enough"]
